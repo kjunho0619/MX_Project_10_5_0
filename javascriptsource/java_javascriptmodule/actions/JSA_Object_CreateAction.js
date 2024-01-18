@@ -16,6 +16,19 @@ import { Big } from "big.js";
  */
 export async function JSA_Object_CreateAction() {
 	// BEGIN USER CODE
-	throw new Error("JavaScript action was not implemented");
+
+	return new Promise((resolve, reject) => {
+		mx.data.create({
+			entity: "Java_JavascriptModule.MxObject",
+			callback: (mxobj) => {
+				mxobj.set("Name","mx001");
+				resolve(mxobj);
+			},
+			error: (e) => {
+				reject("Could not create object:", e.message);
+			}
+		});
+	});
+
 	// END USER CODE
 }

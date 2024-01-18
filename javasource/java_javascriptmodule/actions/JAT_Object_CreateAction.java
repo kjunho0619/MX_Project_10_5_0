@@ -11,6 +11,7 @@ package java_javascriptmodule.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
+import java_javascriptmodule.proxies.MxObject;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class JAT_Object_CreateAction extends CustomJavaAction<IMendixObject>
@@ -24,7 +25,12 @@ public class JAT_Object_CreateAction extends CustomJavaAction<IMendixObject>
 	public IMendixObject executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
+		MxObject mxobject = new MxObject(this.getContext());
+		
+		mxobject.setName("mx001");
+		
+		return mxobject.getMendixObject();
+		
 		// END USER CODE
 	}
 
