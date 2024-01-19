@@ -26871,4 +26871,32 @@ input[type=checkbox].three-state-checkbox + .control-label {
   margin-bottom: 0px;
 }
 
+.allRoundPadding-40-150 {
+  padding: 40px 150px;
+}
+
+.NewBoardTitleStyle {
+  background-color: whitesmoke;
+  border-right: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+}
+
+.NewBoardContensStyle {
+  padding-top: 20px;
+  border-bottom: 1px solid #afafaf;
+}
+
+.th_Style {
+  font-size: 16px;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cke_browser_webkit.RomoveWebkit {
+  display: none;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
