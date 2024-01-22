@@ -16,16 +16,16 @@ import { Big } from "big.js";
  */
 export async function JSA_WizDoc_RemoveRichTextWebkit() {
 	// BEGIN USER CODE
+	
+	//500ms 뒤에 실행 되도록 SetTimeOut 함수 사용(Page Load 후 Webkit을 삭제하기 위해)
 	setTimeout(() =>{
-		
-		let TooltipElement = document.querySelectorAll('.cke_browser_webkit');
 
+		let TooltipElement = document.querySelectorAll('.cke_browser_webkit');
 		let RoofCount = TooltipElement.length;
 		
 		for(var i = 0 ; i< RoofCount; i++){
 			TooltipElement[i].classList.add('RomoveWebkit')
 		}
-
 	}, 500);
 
 	// END USER CODE

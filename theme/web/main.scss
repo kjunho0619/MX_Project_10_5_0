@@ -47,3 +47,15 @@
 .cke_browser_webkit.RomoveWebkit{
     display: none;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.region-sidebar .mx-scrollcontainer-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.region-sidebar .mx-scrollcontainer-wrapper{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
