@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Stylish';
+    font-weight: 400;
+    src: local('Stylish Regular'), url('./Stylish-Regular.ttf') format('truetype');
+}

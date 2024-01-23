@@ -76,10 +76,18 @@ $link-hover-color: darken($link-color, 15%);
 //## Change your font family, weight, line-height, headings and more (used in components/typography)
 
 // Font Family Import (Used for google font plugin in theme creater)
+//Open Sans Font
 $font-family-import: "resources/fonts/open-sans/open-sans.css";
-
-// Font Family / False = fallback from Bootstrap (Helvetica Neue)
 $font-family-base: "Open Sans", sans-serif;
+
+// NotoSansKR Font
+// $font-family-import: "fonts/NotoSansKR/NotoSansKR.css";
+// $font-family-base: "Noto Sans KR", "Open Sans", sans-serif;
+
+// Stylish Font
+// $font-family-import: "fonts/Stylish/Stylish.css";
+// $font-family-base: "Stylish", "Open Sans", sans-serif;
+
 
 // Font Sizes
 $font-size-large: 18px;
