@@ -16,35 +16,35 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import communitycommons.Misc;
 import communitycommons.StringUtils;
-import wizdocmodule.proxies.RichTextImage;
+import wizdocmodule.proxies.DocumentRichIMG;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
-public class JAT_WizDocImg_Base64String extends CustomJavaAction<java.lang.Void>
+public class JAT_DocumentIMG_Base64String extends CustomJavaAction<java.lang.Void>
 {
-	/** @deprecated use com.mendix.utils.ListUtils.map(WizDocTextList, com.mendix.systemwideinterfaces.core.IEntityProxy::getMendixObject) instead. */
+	/** @deprecated use com.mendix.utils.ListUtils.map(DocumentTextList, com.mendix.systemwideinterfaces.core.IEntityProxy::getMendixObject) instead. */
 	@java.lang.Deprecated(forRemoval = true)
-	private final java.util.List<IMendixObject> __WizDocTextList;
-	private final java.util.List<wizdocmodule.proxies.WizDocText> WizDocTextList;
-	/** @deprecated use WizDoc.getMendixObject() instead. */
+	private final java.util.List<IMendixObject> __DocumentTextList;
+	private final java.util.List<wizdocmodule.proxies.DocumentText> DocumentTextList;
+	/** @deprecated use Document.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)
-	private final IMendixObject __WizDoc;
-	private final wizdocmodule.proxies.WizDoc WizDoc;
+	private final IMendixObject __Document;
+	private final wizdocmodule.proxies.Document Document;
 
-	public JAT_WizDocImg_Base64String(
+	public JAT_DocumentIMG_Base64String(
 		IContext context,
-		java.util.List<IMendixObject> _wizDocTextList,
-		IMendixObject _wizDoc
+		java.util.List<IMendixObject> _documentTextList,
+		IMendixObject _document
 	)
 	{
 		super(context);
-		this.__WizDocTextList = _wizDocTextList;
-		this.WizDocTextList = java.util.Optional.ofNullable(_wizDocTextList)
+		this.__DocumentTextList = _documentTextList;
+		this.DocumentTextList = java.util.Optional.ofNullable(_documentTextList)
 			.orElse(java.util.Collections.emptyList())
 			.stream()
-			.map(wizDocTextListElement -> wizdocmodule.proxies.WizDocText.initialize(getContext(), wizDocTextListElement))
+			.map(documentTextListElement -> wizdocmodule.proxies.DocumentText.initialize(getContext(), documentTextListElement))
 			.collect(java.util.stream.Collectors.toList());
-		this.__WizDoc = _wizDoc;
-		this.WizDoc = _wizDoc == null ? null : wizdocmodule.proxies.WizDoc.initialize(getContext(), _wizDoc);
+		this.__Document = _document;
+		this.Document = _document == null ? null : wizdocmodule.proxies.Document.initialize(getContext(), _document);
 	}
 
 	@java.lang.Override
@@ -62,7 +62,7 @@ public class JAT_WizDocImg_Base64String extends CustomJavaAction<java.lang.Void>
 		String searchString = "data:image/";
 		
 		// List 반복 forEach
-		this.WizDocTextList.forEach((mxobj) -> {
+		this.DocumentTextList.forEach((mxobj) -> {
 			
 			//로그 before text
 			String docText = mxobj.getDocText();
@@ -83,13 +83,13 @@ public class JAT_WizDocImg_Base64String extends CustomJavaAction<java.lang.Void>
 					_Logger.info("Base64 TextCut : " + base64);
 					
 					//RichTextImage 저장 객체 생성
-					RichTextImage base64Img = new RichTextImage(ict);
+					DocumentRichIMG base64Img = new DocumentRichIMG(ict);
 					//_Logger.info("base64Img guid : " + base64Img.getMendixObject().getId().toLong());
 					Long imgOjbGUID = base64Img.getMendixObject().getId().toLong();
 					
 					//base64Img Set Name, Set Association
 					base64Img.setName(imgOjbGUID.toString() + "_" + mxobj.getDocTextTitle(ict) + "_img" + StringUtils.randomString(3));
-					base64Img.setRichTextImage_WizDoc(ict, WizDoc);
+					base64Img.setDocumentRichIMG_Document(ict, Document);
 					
 					//base64 Decoding
 					StringUtils.base64DecodeToFile(ict, base64, base64Img);
@@ -128,7 +128,7 @@ public class JAT_WizDocImg_Base64String extends CustomJavaAction<java.lang.Void>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "JAT_WizDocImg_Base64String";
+		return "JAT_DocumentIMG_Base64String";
 	}
 
 	// BEGIN EXTRA CODE

@@ -14,7 +14,7 @@ import { Big } from "big.js";
 /**
  * @returns {Promise.<void>}
  */
-export async function JSA_WizDoc_RemoveRichTextWebkit() {
+export async function JSA_Document_RemoveRichTextWebkit() {
 	// BEGIN USER CODE
 	
 	//500ms 뒤에 실행 되도록 SetTimeOut 함수 사용(Page Load 후 Webkit을 삭제하기 위해)
