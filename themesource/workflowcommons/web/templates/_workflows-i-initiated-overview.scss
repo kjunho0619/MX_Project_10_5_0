@@ -1,0 +1,25 @@
+// Used to add specific styling to the Workflows I initiated overview page
+@media (min-width: $screen-lg) {
+	.mxwc-wiio-header {
+		position: sticky;
+		top: 0px;
+		margin-top: ($layout-spacing-top * -1);
+		padding-top: $layout-spacing-top;
+		z-index: 2;
+		background-color: $bg-color;
+	}
+
+	.mxwc-wiio-list {
+		position: sticky;
+		top: 137px;
+
+		.mxwc-wiio-dropdownfilter select.form-control {
+			width: 100%;
+		}
+	}
+
+	.mxwc-wiio-detail {
+		position: sticky;
+		top: 169px;
+	}
+}

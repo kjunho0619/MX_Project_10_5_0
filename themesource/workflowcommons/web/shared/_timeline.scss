@@ -1,0 +1,26 @@
+.mxwc-timeline-dot {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+
+
+	&.mxwc-timeline-dot-success {
+		background: $brand-success;
+	}
+
+	&.mxwc-timeline-dot-primary {
+		background: $brand-primary;
+	}
+
+	&.mxwc-timeline-dot-warning {
+		background: $brand-warning;
+	}
+
+	&.mxwc-timeline-dot-danger {
+		background: $brand-danger;
+	}
+
+	&.mxwc-timeline-dot-default {
+		background: $brand-default;
+	}
+}

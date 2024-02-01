@@ -1,0 +1,42 @@
+{
+  "layout": {
+    // Add shared layout options here (for all charts)
+  },
+  "configuration": {
+    // Add shared configuration options here (for all charts)
+  },
+  "charts": {
+    "LineChart": {
+      "layout": {
+        // Add line chart only layout options here
+      },
+      "data": {
+        // Add line chart only data options here
+      },
+      "configuration": {
+          // Add line chart only configuration options here
+      }
+    },
+    "AreaChart": {
+      // Same arrangement as the line chart
+    },
+    "BubbleChart": {
+      // Same arrangement as the line chart
+    },
+    "TimeSeries": {
+      // Same arrangement as the line chart
+    },
+    "ColumnChart": {
+      // Same arrangement as the line chart
+    },
+    "BarChart": {
+      // Same arrangement as the line chart
+    },
+    "PieChart": {
+      // Same arrangement as the line chart
+    },
+    "HeatMap": {
+      // Same arrangement as the line chart
+    }
+  }
+}
