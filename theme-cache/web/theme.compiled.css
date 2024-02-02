@@ -27153,4 +27153,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-radius: 5px;
 }
 
+.DocTextListview ul {
+  margin: 0;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
