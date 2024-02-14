@@ -27157,4 +27157,10 @@ input[type=checkbox].three-state-checkbox + .control-label {
   margin: 0;
 }
 
+.ContainerParagrathStyle {
+  border-bottom: 1px solid #afafaf;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
