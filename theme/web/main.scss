@@ -169,3 +169,12 @@ $headBkColor : #efefef;
 .display_none{
     display: none;
 }
+
+//kakao
+$kakao_btn_color:#fada0a;
+
+.kakao_btnStyle{
+    background-color: $kakao_btn_color;
+    color: #000;
+    font-weight: bold;
+}

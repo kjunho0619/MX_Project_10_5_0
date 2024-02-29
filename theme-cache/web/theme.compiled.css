@@ -27193,4 +27193,10 @@ input[type=checkbox].three-state-checkbox + .control-label {
   display: none;
 }
 
+.kakao_btnStyle {
+  background-color: #fada0a;
+  color: #000;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */

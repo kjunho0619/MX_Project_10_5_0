@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "querystringify": "^2.2.0",
+    "url-parse": "^1.5.10"
+  }
+}
