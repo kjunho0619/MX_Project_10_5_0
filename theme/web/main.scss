@@ -134,3 +134,47 @@ $main-img-posision:center;
     padding: 10px 20px;
     margin-top: 10px;
 }
+
+
+//Board Style
+$boardStyle : 1px solid #afafaf;
+$headBkColor : #efefef;
+
+.FileUploadDashboardStyle{
+    margin: 0 100px;
+    padding: 40px 150px;
+    background-color: white;
+}
+
+.boardThStyle{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: $boardStyle;
+    border-right: $boardStyle;
+    border-bottom: $boardStyle;
+    background-color: $headBkColor;
+}
+
+.boardTdStyle{
+    padding-top: 8px;
+    border-bottom: $boardStyle;
+}
+
+.mx-name-onlyValidationFeedback1{
+    margin:0px;
+}
+
+.display_none{
+    display: none;
+}
+
+//kakao
+$kakao_btn_color:#fada0a;
+
+.kakao_btnStyle{
+    background-color: $kakao_btn_color;
+    color: #000;
+    font-weight: bold;
+}

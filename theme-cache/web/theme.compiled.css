@@ -27163,4 +27163,40 @@ input[type=checkbox].three-state-checkbox + .control-label {
   margin-top: 10px;
 }
 
+.FileUploadDashboardStyle {
+  margin: 0 100px;
+  padding: 40px 150px;
+  background-color: white;
+}
+
+.boardThStyle {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+  background-color: #efefef;
+}
+
+.boardTdStyle {
+  padding-top: 8px;
+  border-bottom: 1px solid #afafaf;
+}
+
+.mx-name-onlyValidationFeedback1 {
+  margin: 0px;
+}
+
+.display_none {
+  display: none;
+}
+
+.kakao_btnStyle {
+  background-color: #fada0a;
+  color: #000;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
